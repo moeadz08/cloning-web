@@ -69,6 +69,8 @@ main {
     max-width: 380px;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
 }
 
 .btn {
@@ -142,7 +144,8 @@ footer {
     border-top: 1px solid#fff;
 }
 
-@media (max-width: 768px) {
+
+/* @media (max-width: 768px) {
     #hero {
         flex-direction: column;
         text-align: center;
@@ -153,5 +156,68 @@ footer {
     .hero-img img {
         max-width: 250px;
         margin-top: 1rem;
+    }
+}
+ */
+
+
+/* ======== Responsive Tambahan ======== */
+
+
+/* Tablet */
+
+@media (max-width: 992px) {
+    .container {
+        padding: 20px 40px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #hero {
+        gap: 2rem;
+        padding: 3rem 1rem;
+    }
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    .hero-text p {
+        font-size: 1rem;
+    }
+}
+
+
+/* Smartphone */
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px 20px;
+    }
+    .logo {
+        font-size: 1.2rem;
+    }
+    .navbar {
+        gap: 0.8rem;
+        font-size: 0.9rem;
+    }
+    #hero {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    .hero-text p {
+        font-size: 0.95rem;
+    }
+    .btn {
+        padding: 0.6rem 1.5rem;
+    }
+    .card {
+        max-width: 100%;
     }
 }
