@@ -98,7 +98,8 @@ main {
 }
 
 .dark-mode .card,
-.dark-mode .container {
+.dark-mode .container,
+.dark-mode .navbar a {
     background-color: #333;
     color: #fff;
     box-shadow: none;
